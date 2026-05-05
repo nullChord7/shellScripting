@@ -1,5 +1,5 @@
 ### Shell Scripting
-A collection of simple shell scripting programs and small projects.
+A collection of simple shell scripting programs and small projects. 
 
 ### Contents
 - Basic shell scripts  
