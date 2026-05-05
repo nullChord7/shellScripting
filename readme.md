@@ -1,5 +1,4 @@
 ### Shell Scripting 🐚
-
 A collection of beginner shell scripting programs, and small projects.
 
 ### 📌 About
