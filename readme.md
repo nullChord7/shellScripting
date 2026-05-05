@@ -1,15 +1,15 @@
 ### Shell Scripting
 A collection of beginner shell scripting programs, and small projects.
 
-### 📂 Contents
+### Contents
 - Basic shell scripts  
 - Simple automation scripts  
 - Small projects
 
-### 🚀 Goal
+### Goal
 To learn Linux with a smile 
 
-### ⚡ Status
+### Status
 Work in progress — more scripts will be added as I continue learning.
 
 ---
