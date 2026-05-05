@@ -1,8 +1,8 @@
-### Shell Scripting 🐚
+### Shell Scripting
 A collection of beginner shell scripting programs, and small projects.
 
 ### 📌 About
-07.05.2026 at 4:27 IST.  
+07.05.2026 at 4:30 IST.  
 A record of my shell scripting journey, learning basic concepts by building small scripts to understand Linux.
 
 ### 📂 Contents
