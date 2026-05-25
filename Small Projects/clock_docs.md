@@ -183,11 +183,11 @@ PM
 
 **Unicode box-drawing characters are special symbols used to create shapes, borders, and boxes in the terminal.**
 
-In this clock script, characters like `╭`, `─`, `╮`, `│`, `╰`, and `╯` are used to design the outer frame of the clock.
+In this clock script, characters like `╭`, `─`, `╮`, `│`, `╰`, and `╯` are used to draw the outer frame of the clock.
 
-They do not affect the logic of the program. Their main purpose is to improve the visual appearance of the output.
+They do not affect the program’s logic. Their main purpose is to improve the visual appearance of the output.
 
-Because of these characters, the clock looks like a proper digital clock box instead of normal plain text.
+Because of these characters, the clock looks like a proper digital clock display instead of plain text.
 
 ---
 
@@ -289,55 +289,63 @@ The screen would clear and redraw many times per second, causing flickering and 
 
 So `sleep 1s` makes the clock update like a real digital clock: once every second.
 
-This terminal clock script works by using ANSI color codes for styling, `Reset` to stop color effects, `while true` to keep the clock running forever, Unicode box-drawing characters to create the frame, and `sleep 1s` to refresh the clock every second without flickering or wasting CPU power.
-
 ---
 
-#### **➡️ How to Create and Run the Project in Vim**
+### **➡️ How to Create and Run the Project in Vim**
 
-First, create a new file named `clock.sh` in Vim.
+To create the clock project, open a new file named `clock.sh` in Vim.
 
 ```bash
 vim clock.sh
 ```
 
-Press `i` to enter Insert mode, then paste or type the clock script into the file.
+After Vim opens, press `i` to enter **Insert mode**.
 
-When you are done, save and exit Vim:
+Now paste or type the clock script into the file.
+
+When you are done, save and exit Vim using:
 
 ```bash
 Esc
-:wq # (shift + ; = :)
+:wq   # shift + ; gives :
 Enter
 ```
 
-`:wq` means “write and quit”. It saves the file and closes Vim.
+Here, `:wq` means **write and quit**.
+
+In other words, it saves the file and closes Vim.
 
 **⭐ Method 1: Run using Bash or Zsh directly**
 
-After creating the file, you can run it with:
+After saving the file, you can run the script like this:
 
 ```bash
 bash clock.sh
 ```
 
-But since the script uses zsh in the shebang:
+But in this project, the script starts with:
 
 ```bash
 #!/bin/zsh
 ```
 
-a better command is:
+That means the script is written for the **Zsh shell**.
+
+So a better way to run it is:
 
 ```bash
 zsh clock.sh
 ```
 
-This method does not require executable permissions because you are explicitly telling the terminal which shell should run the file.
+This method is simple because you do not need to change file permissions.
+
+You are directly telling the terminal:
+
+“Run this file using Zsh.”
 
 **⭐ Method 2: Run as an executable file**
 
-Before running the file as an executable, check whether it has execute permissions:
+If you want to run the script like a proper executable program, first check its permissions.
 
 ```bash
 ls -l clock.sh
@@ -349,17 +357,25 @@ Example output:
 -rw-r--r-- 1 user user 300 May 25 clock.sh
 ```
 
-Here, `rw-` means the file has read and write permissions, but not execute permissions.
+Here, there is no `x` in the permission section.
 
-If there is no `x`, the file is not executable.
+That means the file can be read and edited, but it cannot be executed directly yet.
 
-To add execute permissions:
+So if you try to run:
+
+```bash
+./clock.sh
+```
+
+it may not work until you add execute permission.
+
+To add execute permission, use:
 
 ```bash
 chmod +x clock.sh
 ```
 
-Now check again:
+Now check the permissions again:
 
 ```bash
 ls -l clock.sh
@@ -371,10 +387,14 @@ Example output:
 -rwxr-xr-x 1 user user 300 May 25 clock.sh
 ```
 
-Now the `x` indicates the file is executable.
+Now the `x` is visible.
 
-Run it with:
+That means the file has execute permission.
+
+Finally, run the script using:
 
 ```bash
 ./clock.sh
 ```
+
+Now the terminal will treat `clock.sh` like an executable program.
