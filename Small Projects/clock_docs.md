@@ -211,7 +211,7 @@ In Vim or Vi insert mode, Unicode characters can be typed using their Unicode va
 Steps:
 
 ```bash
-Press Ctrl + V
+Press Ctrl + v
 Press u
 Type the Unicode value
 Press Enter (if needed)
@@ -220,7 +220,7 @@ Press Enter (if needed)
 Example for printing `─`:
 
 ```bash
-Ctrl + V
+Ctrl + v
 u
 2500
 ```
@@ -234,7 +234,7 @@ This will print:
 Example for printing `│`:
 
 ```bash
-Ctrl + V
+Ctrl + v
 u
 2502
 ```
@@ -254,9 +254,9 @@ So if you want to type the top border manually in Vim:
 You can use:
 
 ```bash
-Ctrl + V u 256d  for ╭
-Ctrl + V u 2500  for ─
-Ctrl + V u 256e  for ╮
+Ctrl + v u 256d  for ╭
+Ctrl + v u 2500  for ─
+Ctrl + v u 256e  for ╮
 ```
 
 ---
